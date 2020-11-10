@@ -23,9 +23,7 @@ class Game:
 		self.rand_word = self.random_word()
 		self.points = 0
 		self.color = WHITE
-
 		
-
 	def start(self):
 		while self.run:
 			self.clock.tick(self.FPS)
@@ -67,7 +65,6 @@ class Game:
 				self.points -= 1
 				self.current_word = ""
 				self.rand_word = self.random_word()
-
 
 	def draw_keypress(self):
 		self.screen.blit(self.myfont.render(self.key,False, WHITE), (40,40))
